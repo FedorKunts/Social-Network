@@ -25,10 +25,7 @@
 
 
 
-.nav {
-  grid-area: n;
-  background-color: bisque;
-}
+
 
 .content {
   grid-area: c;
