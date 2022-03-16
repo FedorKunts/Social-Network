@@ -1,11 +1,6 @@
 .app-wrapper {
   max-width: 1200px;
   margin: auto;
-  
-
-
-
-
   display: grid;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
@@ -16,26 +11,22 @@
    'f f';
 }
 
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {
   .app-wrapper {
       display: block;
       text-align: left;
   }
-}
+}*/
 
-
-
-
-
-.content {
+.app-wrapper-content {
   grid-area: c;
-  background-color: azure;
+  background-color: rgb(194, 245, 221);
 }
 
-.footer {
-  grid-area: f;
-  background-color: rgb(26, 71, 71);
-}
+
+
+
+
 
 
 
