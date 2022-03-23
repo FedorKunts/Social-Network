@@ -8,9 +8,7 @@ let Footer = () => {
           <a href='https://www.instagram.com/' target='_blank'>
               Insta
           </a>
-          <a>
-
-          </a>
+        <span className={s.developed}>Разработан 2021</span>
       </div>
     </footer>
   );

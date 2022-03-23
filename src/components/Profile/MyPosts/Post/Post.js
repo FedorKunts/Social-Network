@@ -1,13 +1,13 @@
 import React from "react";
-import s from './Post.module.css';
+import s from "./Post.module.css";
 
 let Post = (props) => {
-    return (
-        <div>
-            {props.message}
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      <div>{props.message}</div>
+      <div>Like{props.likesCount}</div>
+    </div>
+  );
+};
 
 export default Post;

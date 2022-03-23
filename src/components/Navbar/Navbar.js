@@ -5,12 +5,21 @@ import s from "./Navbar.module.css";
 let Navbar = () => {
   return (
     <nav className={s.nav}>
-      <div>
+      <div className={s.wrapper}>
         <div>
-          <NavLink to='/profile'>Profile</NavLink>
+          <NavLink to="/profile">Profile</NavLink>
         </div>
         <div>
-          <NavLink to='/messages'>Messages</NavLink>
+          <NavLink to="/messages">Messages</NavLink>
+        </div>
+        <div>
+          <NavLink to="/settings">Settings</NavLink>
+        </div>
+        <div>
+          <NavLink to="/musics">Music</NavLink>
+        </div>
+        <div>
+          <NavLink to="/friends">Friends</NavLink>
         </div>
       </div>
     </nav>

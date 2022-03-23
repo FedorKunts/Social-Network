@@ -1,4 +1,9 @@
 .nav {
     grid-area: n;
     background-color: rgb(90, 226, 147);
+    
   }
+  
+.wrapper a {
+  text-decoration: none;
+}
