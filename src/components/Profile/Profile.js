@@ -1,13 +1,12 @@
 import React from "react";
 import Info from "./Info/Info";
 import MyPosts from "./MyPosts/MyPosts";
-import s from "./Profile.module.css";
 
-let Profile = () => {
+let Profile = (props) => {
   return (
-    <div >
+    <div>
       <Info />
-      <MyPosts />
+      <MyPosts state={props.state.profilePage} />
     </div>
   );
 };

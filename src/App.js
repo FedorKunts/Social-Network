@@ -10,16 +10,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Settings from "./components/Setrtings/Settings";
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="app-wrapper">
       <Header />
       <Navbar />
       <div className="app-wrapper-content">
         <Routes>
-          <Route exact path="/profile" element={<Profile />} />
-          <Route exact path="/messages" element={<Dialogs />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route exact path="/profile" element={<Profile state={props.state.profilePage} />} />
+          <Route exact path="/messages" element={<Dialogs state={props.state.dialogsPage} />} />
+          <Route path="/settings" render={() => <Settings />} />
           <Route path="/music" element={<Music />} />
           <Route path="/friends" element={<Friends />} />
         </Routes>
