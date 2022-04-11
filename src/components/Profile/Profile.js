@@ -1,12 +1,14 @@
 import React from "react";
 import Info from "./Info/Info";
 import MyPosts from "./MyPosts/MyPosts";
+import s from './Profile.module.css';
 
 let Profile = (props) => {
+  
   return (
-    <div>
+    <div className={s.wrapper}>
       <Info />
-      <MyPosts state={props.state.profilePage} />
+      <MyPosts state={props.state} addPost={props.addPost} />
     </div>
   );
 };

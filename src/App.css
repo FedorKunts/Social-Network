@@ -20,7 +20,8 @@
 
 .app-wrapper-content {
   grid-area: c;
-  background-color: rgb(172, 243, 231);
+  background-color: #445c7a;
+  height: 900px;
 }
 
 
