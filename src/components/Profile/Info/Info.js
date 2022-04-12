@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Info.module.css';
-
 import me from '../../../assets/images/me.JPG';
 
 let Info = () => {
